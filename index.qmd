@@ -123,7 +123,7 @@ Les formats de stockage des géométries les plus connus sont :
 
 ::: columns
 ::: {.column width="49%"}
--   **Shapefile (.shp)** : ou « fichier de couches » est le format de fichier **historique** des SIG. Initialement développé par ESRI pour ses logiciels commerciaux, il est devenu un standard *de facto*, malgré ses limitations (taille de fichiers, longueur texte, nombre maximal d'attributs)...
+-   **Shapefile (.shp)** : ou « fichier de formes » est le format de fichier **historique** des SIG. Initialement développé par ESRI pour ses logiciels commerciaux, il est devenu un standard *de facto*, malgré ses limitations (taille de fichiers, longueur texte, nombre maximal d'attributs)...
 
 -   **Geographic JSON (.geojson)** : Un format ouvert d'encodage de données géospatiales utilisant la norme JSON (JavaScript Object Notation), assez répandu sur le Web (cartographie interactive, D3.js).
 :::
