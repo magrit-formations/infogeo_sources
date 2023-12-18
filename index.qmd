@@ -65,7 +65,7 @@ grViz("digraph dot {
 
 Elles définissent la **forme** et la **localisation** de l'objet à cartographier sur la surface terrestre.
 
-La position des géométries est toujours exprimée dans un système de coordonnées explicite : **latitude/longitude** ou en **coordonnées géographiques**.
+La position des géométries est toujours exprimée dans un système de coordonnées explicite : **coordonnées géographiques** (latitude / longitude) ou **coordonnées projetées** (X / Y).
 
 ![](img/notre_dame.png)
 
