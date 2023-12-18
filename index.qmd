@@ -152,7 +152,7 @@ D'autres fichiers peuvent optionnellement être également fournis :
 -   **.prj** : information sur le système de coordonnées.
 -   **.shp.xml** : métadonnées du shapefile.
 -   **.cpg** : gestion de l'encodage.
--   et potentiellement d'autres : .sbn, .sbx, .fbn,.fbx, .atx...
+-   et potentiellement d'autres : .fbn, .fbx, .atx...
 :::
 
 ::: {.column width="49%"}
