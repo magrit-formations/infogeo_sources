@@ -350,7 +350,7 @@ Les fournisseurs de fonds de carte géoréférencés sont nombreux...
 :::
 
 ::: {.column width="49%"}
-**Les collectivités terrritoriales**
+**Les collectivités territoriales**
 
 -   Portail Open Data des régions : [Ile-de-France](https://data.iledefrance.fr/pages/home/%22){.external target="_blank"}, [Hauts-de-France](https://opendata.hautsdefrance.fr/){.external target="_blank"}, [Bretagne](https://data.bretagne.bzh/pages/home-page/){.external target="_blank"} etc.
 
@@ -383,6 +383,7 @@ Les géométries contiennent souvent quelques attributs statistiques, **assez li
 
 ::: columns
 ::: {.column width="49%"}
+
 ::: medium
 Attributs associés aux géométries des communes françaises (IGN)
 :::
