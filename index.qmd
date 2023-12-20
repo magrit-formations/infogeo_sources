@@ -20,6 +20,7 @@ title-slide-attributes:
 editor: visual
 execute:
   echo: true
+  cache: true
 editor_options: 
   chunk_output_type: console
 ---
