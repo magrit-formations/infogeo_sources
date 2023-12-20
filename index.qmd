@@ -20,6 +20,7 @@ title-slide-attributes:
 editor: visual
 execute:
   echo: true
+  cache: true
 editor_options: 
   chunk_output_type: console
 ---
@@ -65,7 +66,7 @@ grViz("digraph dot {
 
 Elles définissent la **forme** et la **localisation** de l'objet à cartographier sur la surface terrestre.
 
-La position des géométries sont toujours exprimées dans un système de coordonnées explicite : **latitude/longitude** ou en **coordonnées géographiques**.
+La position des géométries est toujours exprimée dans un système de coordonnées explicite : **coordonnées géographiques** (latitude / longitude) ou **coordonnées projetées** (X / Y).
 
 ![](img/notre_dame.png)
 
@@ -123,7 +124,7 @@ Les formats de stockage des géométries les plus connus sont :
 
 ::: columns
 ::: {.column width="49%"}
--   **Shapefile (.shp)** : ou « fichier de couches » est le format de fichier **historique** des SIG. Initialement développé par ESRI pour ses logiciels commerciaux, il est devenu un standard *de facto*, malgré ses limitations (taille de fichiers, longueur texte, nombre maximal d'attributs)...
+-   **Shapefile (.shp)** : ou « fichier de formes » est le format de fichier **historique** des SIG. Initialement développé par ESRI pour ses logiciels commerciaux, il est devenu un standard *de facto*, malgré ses limitations (taille de fichiers, longueur texte, nombre maximal d'attributs)...
 
 -   **Geographic JSON (.geojson)** : Un format ouvert d'encodage de données géospatiales utilisant la norme JSON (JavaScript Object Notation), assez répandu sur le Web (cartographie interactive, D3.js).
 :::
@@ -152,7 +153,7 @@ D'autres fichiers peuvent optionnellement être également fournis :
 -   **.prj** : information sur le système de coordonnées.
 -   **.shp.xml** : métadonnées du shapefile.
 -   **.cpg** : gestion de l'encodage.
--   et potentiellement d'autres : .sbn, .sbx, .fbn,.fbx, .atx...
+-   et potentiellement d'autres : .fbn, .fbx, .atx...
 :::
 
 ::: {.column width="49%"}
@@ -350,7 +351,7 @@ Les fournisseurs de fonds de carte géoréférencés sont nombreux...
 :::
 
 ::: {.column width="49%"}
-**Les collectivités terrritoriales**
+**Les collectivités territoriales**
 
 -   Portail Open Data des régions : [Ile-de-France](https://data.iledefrance.fr/pages/home/%22){.external target="_blank"}, [Hauts-de-France](https://opendata.hautsdefrance.fr/){.external target="_blank"}, [Bretagne](https://data.bretagne.bzh/pages/home-page/){.external target="_blank"} etc.
 
@@ -383,6 +384,7 @@ Les géométries contiennent souvent quelques attributs statistiques, **assez li
 
 ::: columns
 ::: {.column width="49%"}
+
 ::: medium
 Attributs associés aux géométries des communes françaises (IGN)
 :::
@@ -419,7 +421,6 @@ Attributs associés aux géométries pays du monde (Natural Earth)
 
 ```{r, echo = FALSE, out.width = "800px", fig.align='center'}
 library(rnaturalearth)
-country <- ne_download(scale = 110, type = "countries", returnclass = "sf")
 country <- st_set_geometry(country, NULL)
 country <- as.data.frame(country)
 head(country)
