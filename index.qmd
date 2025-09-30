@@ -283,7 +283,7 @@ map_theme <- mf_theme("default", bg = NA, fg = NA, mar = c(0, 0, 0, 0), tab = TR
 mf_theme(map_theme)
 mf_init(frame)
 mf_map(nuts2, var = "URBN_TYPE", type = "typo", pal = c("red", "yellow", "lightgreen"), 
-  val_order = c("1", "2", "3"), border = "white", lwd = .7, add = TRUE, leg_pos = "n")
+  val_order = c("1", "2", "3"), border = "white", lwd = .7, add = TRUE, leg_pos = NA)
 mf_legend(type = "typo", pos = "left", title = "Typologie Urbain-Rural",
           val = c("Région à prédominance urbaine", "Region intermédiaire", 
                   "Région à prédominance rurale"),
@@ -307,7 +307,7 @@ nuts0 <- gisco_get_nuts(nuts_level = 0, resolution = "60", epsg = "3035")
 mf_theme(map_theme)
 mf_init(frame)
 mf_map(nuts2, var = "URBN_TYPE", type = "typo", pal = c("red", "yellow", "lightgreen"), 
-  val_order = c("1", "2", "3"), border = "white", lwd = .7, add = TRUE, leg_pos = "n")
+  val_order = c("1", "2", "3"), border = "white", lwd = .7, add = TRUE, leg_pos = NA)
 mf_legend(type = "typo", pos = "left", title = "Typologie Urbain-Rural",
           val = c("Région à prédominance urbaine", "Region intermédiaire", 
                   "Région à prédominance rurale"),
